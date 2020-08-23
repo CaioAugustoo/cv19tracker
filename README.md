@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CV19Tracker
+Projeto que consiste em consumir [API de Coronavírus](https://covid19-brazil-api-docs.now.sh) e retornar os dados em tempo real.
 
-## Available Scripts
+## Sobre o projeto 
+Este foi meu primeiro projeto realizado com ReactJS. Inicialmente este projeto iria ser realizado apenas com HTML, CSS e JavaScript, entretanto resolvi me desafiar e realizar o mesmo com a biblioteca React. Este foi de extrema importância para mim pois, além de reforçar os conhecimentos de React, eu aprendi bastante como usar a linha de comando, importar libs, frameworks css, etc.
 
-In the project directory, you can run:
+Como dito anteriormente, esse projeto consome uma API Brasileira de coronavírus e retorna à aplicação os dados em tempo real. É retornado casos totais de Covid19 ao redor do mundo, e especificamente casos do Brasil (por estados).
 
-### `yarn start`
+Este projeto conta, como "feature", com um modo-light/modo-escuro para uma melhor visualização. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Demonstração
+Veja abaixo uma foto do projeto.
+[![Image from Gyazo](https://i.gyazo.com/39c7fbe2b83be135b457ac012bf19556.png)](https://gyazo.com/39c7fbe2b83be135b457ac012bf19556)
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Você pode conferir o resultado final aqui: https://caioaugustoo.github.io/cv19tracker
 
-### `yarn build`
+## Objetivo do projeto
+Foi realizado este projeto com o intuito de aplicar os conhecimentos adquiridos sobre requisições HTTPS utilizando API e fundamentos React. Visto que
+foi a minha primeira vez consumindo uma API dentro do React, considero este o melhor projeto realizado por mim.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tecnologias 
+Para a realização desse projeto foi utilizado as seguintes tecnologias/linguagens: 
+- [ReactJS](https://pt-br.reactjs.org) para criação da interface
+- [API](https://covid19-brazil-api-docs.now.sh) para obtenção dos dados
+- [SASS](https://sass-lang.com) para a estilização
+- [react-tooltip](https://www.npmjs.com/package/react-tooltip) para criação de tooltips
+- [Bootstrap](https://getbootstrap.com) para ajudar no desenvolvimento
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Instalação
+Para que este rode em sua máquina, siga os passos abaixo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clone o repositório em alguma pasta em sua máquina
+$ git clone https://github.com/CaioAugustoo/cv19tracker
 
-### `yarn eject`
+# Entre no repositório
+$ cd cv19tracker
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Abra no navegador
+$ yarn start
+Rode a aplicação no modo de desenvolvimento.
+Abra http://localhost:3000 no seu navegador para visualizar o projeto
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Suporte
+Caso você tenha gostado do projeto você pode [ajudar fazendo uma doação](https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=129081999-04b80ee2-0f9e-44df-ae15-51cdd03f87ce) ou apenas dando uma estrela no projeto.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Licença
+Copyright © 2020 Caio Augusto.
+Este projeto possui licença MIT.
