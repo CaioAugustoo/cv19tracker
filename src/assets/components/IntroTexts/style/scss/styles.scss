@@ -1,0 +1,18 @@
+@import '../../../../styles/scss/_animations.scss';
+
+#intro_text {
+  padding: 50px 0px;
+  animation-name: textsIntro;
+  animation-delay: .1.3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#updated_text {
+  padding: 50px 0px;
+  text-align: right;
+  animation-name: textsIntro;
+  animation-delay: .1.5s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}

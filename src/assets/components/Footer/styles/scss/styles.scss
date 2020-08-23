@@ -1,0 +1,9 @@
+@import '../../../../styles/scss/colors.scss';
+@import '../../../../styles/scss/animations.scss';
+
+#footer {
+  animation-name: footer;
+  animation-delay: 3.5s;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}

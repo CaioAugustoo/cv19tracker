@@ -1,0 +1,36 @@
+@import '../../../../styles/scss/colors.scss';
+@import '../../../../styles/scss/animations.scss';
+
+#casesByStates {
+  background: $dark-components;
+  width: 500px;
+  height: 470px;
+  color: #ffffff;
+  overflow-y: scroll;
+  border-radius: 7px;
+  padding: 20px;
+  animation-name: cards;
+  animation-delay: 3.1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  box-shadow: $dark-shadow;
+  transition: all .3s ease;
+
+  >div {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.096);
+  }
+}
+
+#data {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.096);
+}
+
+#data p:nth-last-child {
+  border: none;
+}
+
+.infos {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.096);
+  margin: 10px 0px;
+  font-size-adjust: 0.9rem;
+}

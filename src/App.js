@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ReactTooltip from 'react-tooltip';
+import PreLoader from '../src/assets/components/PreLoader/PreLoader';
+import SideBar from './assets/components/SideBar/SideBar';
+import IntroTexts from './assets/components/IntroTexts/IntroTexts';
+import CardCases from './assets/components/IntroCards/CardCases/CardCases';
+import CardsGeneral from './assets/components/CardsByCountry/CardsGeneral/CardsGeneral';
+import Footer from './assets/components/Footer/Footer';
+import './assets/styles/css/main.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <PreLoader />
+      <ReactTooltip />
+      <SideBar />
+      <IntroTexts />
+      <CardCases />
+      <CardsGeneral />
+      <Footer />
+    </ React.Fragment>
   );
-}
+};
 
 export default App;

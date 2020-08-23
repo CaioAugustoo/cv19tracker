@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,700&display=swap");
+
+@keyframes cards {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes sideBarReponsive {
+  from {
+    transform: translate3d(00px, 100px, 0px);
+    opacity: 0;
+  } to {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+@keyframes textsIntro {
+  from {
+    transform: translate3d(0px, -100px, 0px);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+@keyframes sideBar {
+  from {
+    transform: translate3d(-700px, 0px, 0px);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+@keyframes hidePreloader {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+body {
+  background-color: #1B1B1B !important;
+  color: #ffffff !important;
+  font-family: "Poppins", sans-serif !important;
+  transition: all .3s ease;
+}
+
+p, h1 {
+  margin-bottom: 0px !important;
+}
+
+h1 {
+  font-size: 1.5rem !important;
+}
+
+.container {
+  max-width: 1500px !important;
+}
+
+::selection {
+  background: #FFAA00;
+}
+
+body > div.preloader {
+  position: fixed;
+  background: #FFAA00 !important;
+  width: 100%;
+  height: 100%;
+  z-index: 1071;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  overflow: hidden;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body:not(.loaded) > div.preloader {
+  opacity: 1;
+}
+
+body.loaded .preloader {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body:not(.loaded) {
+  overflow: hidden;
+}
+
+body.loaded > div.preloader {
+  animation: hidePreloader ease 0.3s ease 0.5s ease-in-out;
+}
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 129;
+  margin: 0 auto;
+  background: #1B1B1B;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+body.light-mode {
+  background-color: #F5F5FC !important;
+  color: #262626 !important;
+}
+body.light-mode #sideBar {
+  background-color: #FFFFFF !important;
+}
+body.light-mode #confirmed_box, body.light-mode #recovered_box, body.light-mode #deaths_box {
+  background-color: #FFFFFF !important;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.03) !important;
+}
+body.light-mode .preloader {
+  background-color: #F5F5FC;
+}
+body.light-mode #card_brazil, body.light-mode #card_china, body.light-mode #card_italy, body.light-mode #card_us {
+  background-color: #FFFFFF;
+  color: #262626;
+}
+
+body.light-mode #searchBox {
+  background-color: #FFFFFF;
+}
+body.light-mode #searchBox input {
+  background-color: #FFFFFF;
+  color: #262626;
+}
+body.light-mode #searchBox #confirmed_box, body.light-mode #searchBox #deaths_box, body.light-mode #searchBox #recovered_box {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07) !important;
+}
+body.light-mode #card_brazil::after, body.light-mode #card_china::after, body.light-mode #card_italy::after, body.light-mode #card_us::after {
+  content: "";
+  display: block;
+  background-color: #262626;
+  width: 165px;
+  height: 2px;
+  position: relative;
+  float: right;
+  bottom: 160px;
+}
+
+body.light-mode #casesByStates {
+  background-color: #FFFFFF !important;
+  color: #262626;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.03);
+  
+}
+
+body.light-mode #data {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+body.light-mode .infos {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+@keyframes cards {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes textsIntro {
+  from {
+    transform: translate3d(0px, -100px, 0px);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+@keyframes sideBar {
+  from {
+    transform: translate3d(-700px, 0px, 0px);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+@keyframes hidePreloader {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@media (min-width: 1599.98px) and (max-width: 1600px){
+
+  #intro_text, #globalCases, #casesByCountry {
+    margin-left: 75px;
+    text-align: left;
+  }
+
+  #card_brazil {
+    margin-bottom: 0px;
+  }
+
+  #casesByCountry > div > div {
+    flex: 0;
+  }
+  
+  #footer {
+    margin-bottom: 90px;
+  }
+
+}
+
+
+@media (min-width: 1440px) and (max-width: 1599.98px) {
+
+
+  #intro_text, #globalCases, #casesByCountry {
+    margin-left: 150px;
+  }
+
+  #card_brazil {
+    margin-bottom: 30px;
+  }
+
+  #casesByCountry > div > div {
+    flex: 1 1 100%;
+  }
+
+  #footer {
+    margin-bottom: 50px;
+  }
+  
+}
+
+
+
+
+@media (min-width: 1360px) and (max-width: 1439.98px) {
+
+  #intro_text, #globalCases, #casesByCountry {
+    margin-left: 230px;
+  }
+
+  #card_brazil {
+    margin-bottom: 0px;
+  }
+
+  #casesByCountry > div > div {
+    flex: 1 1 100%;
+  }
+
+  #footer {
+    margin-bottom: 90px;
+  }
+
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1359.98px) {
+
+  #intro_text, #globalCases, #casesByCountry {
+    margin-left: 160px;
+  }
+
+  #card_brazil {
+    margin-bottom: 30px;
+  }
+
+  #casesByCountry > div > div {
+    flex: 1 1 100%;
+  }
+
+  #footer {
+    margin-bottom: 90px;
+  }
+  
+}
+
+
+
+
+@media  (min-width:300px) and (max-width: 787px) {
+
+  #sideBar {
+    width: 100%;
+    height: 5rem;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0px;
+    box-shadow: 0px 5px 25px #00000010;
+    animation-name: sideBarReponsive;
+  }  
+
+  #card_brazil, #card_us, #card_china, #card_italy {
+    max-width: 300px;
+    margin: 10px 0px !important;
+    text-align: center;
+  }
+  
+  #card_brazil::after, #card_us::after, #card_china::after, #card_italy::after {
+    display: none;
+  }
+
+  #sideBar img {
+    margin: 0rem 1rem;
+    color: #67676D;
+    transition: all .3s ease;
+    cursor: pointer;
+  }
+
+  .__react_component_tooltip {
+    display: none;
+  }
+
+  #intro_text {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #globalCases .container .d-flex {
+    justify-content: center !important;
+  }
+
+  #recovered_box, #confirmed_box, #deaths_box {
+    margin: 10px 0px !important;
+    text-align: center !important;
+  }
+
+  #casesByStates {
+    max-width: 300px;
+    font-size: 0.8rem;
+    text-align: center !important;
+  }
+
+  .d-flex.justify-content-start {
+    justify-content: center !important;
+  }
+  
+  #globalCases #casesByCountry {
+    margin-left: 0px !important;
+  }
+
+  body.light-mode #card_brazil::after, body.light-mode #card_china::after, body.light-mode #card_italy::after, body.light-mode #card_us::after {
+    display: none;
+  }
+
+  #footer {
+    margin-bottom: 150px;
+  }
+  
+}
+

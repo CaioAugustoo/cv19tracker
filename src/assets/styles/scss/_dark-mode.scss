@@ -1,0 +1,57 @@
+@import 'colors';
+
+body.light-mode {
+  background-color: $light-general !important;
+  color: $black-text !important;
+
+  #confirmed_box, #recovered_box, #deaths_box {
+    background-color: $light-components !important;
+    box-shadow: $light-shadow !important;
+  }
+
+  #searchBox {
+    background-color: $light-general !important;
+  }
+
+  .preloader {
+    background-color: $light-general;
+  }
+
+  #card_brazil, #card_china, #card_italy, #card_us {
+    background-color: $light-components;
+    color: $black-text;
+
+    &::after {
+      content: '';
+      display: block;
+      background-color: $black-text;
+      width: 165px;
+      height: 2px;
+      position: relative;
+      float: right;
+      bottom: 160px;
+    }
+  }
+
+  #casesByStates {
+    background-color: $light-components !important;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: $dark-text;
+  }
+  
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $white-general;  
+  }
+
+  #sideBar {
+    background-color: $light-components !important;
+  } 
+}

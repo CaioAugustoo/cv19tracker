@@ -1,0 +1,36 @@
+@import '../../../../styles/scss/colors.scss';
+@import '../../../../styles/scss/_animations.scss';
+
+#sideBar {
+  background-color: $dark-components;
+  width: 5rem;
+  height: 100vh;
+  padding: 10px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all .3s ease;
+  z-index: 100;
+  animation-name: sideBar;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+
+  img {
+    margin: 1rem 0px;
+    color: $icons;
+    transition: all .3s ease;
+    cursor: pointer;
+  }
+
+  .current_page {
+    background: $yellow;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all .3s ease;
+    cursor: pointer;
+  }
+
+}

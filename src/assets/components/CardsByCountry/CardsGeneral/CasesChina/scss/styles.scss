@@ -1,0 +1,41 @@
+@import '../../../../../styles/scss/colors.scss';
+@import '../../../../../styles/scss/animations.scss';
+
+#card_china {
+  width: 445px;
+  height: 220px;
+  background-color: $dark-components;
+  color: $white-text;
+  padding: 20px;
+  border-radius: 7px;
+  transition: all .3s ease;
+  animation-name: cards;
+  animation-delay: 2.2s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  box-shadow: $dark-shadow;
+  
+  h1 {
+    font-weight: 400;
+  }
+
+  p {
+    font-weight: 400;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    background-color: $white-text;
+    width: 165px;
+    height: 2px;
+    position: relative;
+    float: right;
+    bottom: 160px;  
+    transition: all .3s ease;
+  }
+}

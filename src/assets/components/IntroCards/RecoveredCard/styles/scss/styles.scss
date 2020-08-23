@@ -1,0 +1,29 @@
+@import '../../../../../styles/scss/_colors.scss';
+@import '../../../../../styles/scss/animations.scss';
+
+#recovered_box {
+  width: 250px;
+  height: 100px;
+  background-color: $dark-components;
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px;
+  box-shadow: $dark-shadow;
+  transition: all .3s ease;
+  animation-name: cards;
+  animation-delay: 1.3s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+  &::before {
+    content: '';
+    border-radius: 100px;
+    position: relative;
+    display: block;
+    width: 5px;
+    height: 30px;
+    left: -46px;
+    background-color: $card-recovered;
+  }
+  
+}

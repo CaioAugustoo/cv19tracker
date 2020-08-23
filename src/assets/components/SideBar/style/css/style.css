@@ -1,0 +1,98 @@
+@keyframes cards {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes textsIntro {
+  from {
+    transform: translate3d(0px, -100px, 0px);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+@keyframes sideBar {
+  from {
+    transform: translate3d(-700px, 0px, 0px);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+@keyframes hidePreloader {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes footer {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes sideBarReponsive {
+  from {
+    transform: translate3d(0px, 100px, 0px);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+#sideBar {
+  background-color: #262626;
+  width: 5rem;
+  height: 100vh;
+  padding: 10px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  z-index: 100;
+  animation-name: sideBar;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+}
+#sideBar img {
+  margin: 1rem 0px;
+  color: #67676D;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#sideBar .current_page {
+  background: #FFAA00;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
