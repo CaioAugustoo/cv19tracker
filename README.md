@@ -37,9 +37,12 @@ $ git clone https://github.com/CaioAugustoo/cv19tracker
 # Entre no repositório
 $ cd cv19tracker
 
-# Abra no navegador
-$ yarn start
+Instale as dependencias digitando no termimal:
+$ yarn install
+
 Rode a aplicação no modo de desenvolvimento.
+$yarn start
+
 Abra http://localhost:3000 no seu navegador para visualizar o projeto
 ```
 
