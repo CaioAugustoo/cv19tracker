@@ -6,7 +6,7 @@ Este foi meu primeiro projeto realizado com ReactJS. Inicialmente este projeto i
 
 Como dito anteriormente, esse projeto consome uma API Brasileira de coronavírus e retorna à aplicação os dados em tempo real. É retornado casos totais de Covid19 ao redor do mundo, e especificamente casos do Brasil (por estados).
 
-Este projeto conta, como "feature", com um modo-light/modo-escuro para uma melhor visualização. 
+Este projeto conta, como "feature", com um modo-light/modo-escuro para uma melhor visualização. Após alternar entre os temas, o tema ficará salvo no localstorage do seu navegador, sendo assim, quando você sair ou fechar a página, a preferência pelo tema ficará salvo, sem a necessidade de ficar habilitando manualmente.
 
 
 ## Demonstração
