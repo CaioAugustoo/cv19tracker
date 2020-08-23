@@ -13,9 +13,6 @@ Este projeto conta, como "feature", com um modo-light/modo-escuro para uma melho
 Veja abaixo uma foto do projeto.
 [![Image from Gyazo](https://i.gyazo.com/39c7fbe2b83be135b457ac012bf19556.png)](https://gyazo.com/39c7fbe2b83be135b457ac012bf19556)
 
-
-Você pode conferir o resultado final aqui: https://caioaugustoo.github.io/cv19tracker
-
 ## Objetivo do projeto
 Foi realizado este projeto com o intuito de aplicar os conhecimentos adquiridos sobre requisições HTTPS utilizando API e fundamentos React. Visto que
 foi a minha primeira vez consumindo uma API dentro do React, considero este o melhor projeto realizado por mim.
