@@ -51,4 +51,3 @@ Caso você tenha gostado do projeto você pode [ajudar fazendo uma doação](htt
 
 ## Licença
 Copyright © 2020 Caio Augusto.
-Este projeto possui licença MIT.
