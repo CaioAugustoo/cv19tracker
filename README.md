@@ -45,7 +45,7 @@ $ yarn start
 
 Abra http://localhost:3000 no seu navegador para visualizar o projeto
 
-OBS: Caso após você tentar a aplicação em modo de desenvolvimento e retornar o seguinte erro: "Module not found: Can't resolve 'react-tooltip'", opte por instalar o react-tooltip manualmente (basta digitar no terminal "npm install react-tooltip" ou "yarn add react-tooltip").
+OBS: Caso você tentar rodar a aplicação em modo de desenvolvimento e retornar o seguinte erro: "Module not found: Can't resolve 'react-tooltip'", opte por instalar o react-tooltip manualmente (basta digitar no terminal "npm install react-tooltip" ou "yarn add react-tooltip").
 ```
 
 
