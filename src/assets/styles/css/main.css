@@ -229,7 +229,7 @@ body.light-mode .infos {
   }
 }
 
-@media (min-width: 1599.98px) and (max-width: 1600px){
+@media (min-width: 1599.99px) and (max-width: 1600px){
 
   #intro_text, #globalCases, #casesByCountry {
     margin-left: 75px;
@@ -249,7 +249,6 @@ body.light-mode .infos {
   }
 
 }
-
 
 @media (min-width: 1440px) and (max-width: 1599.98px) {
 
@@ -272,9 +271,6 @@ body.light-mode .infos {
   
 }
 
-
-
-
 @media (min-width: 1360px) and (max-width: 1439.98px) {
 
   #intro_text, #globalCases, #casesByCountry {
@@ -293,9 +289,11 @@ body.light-mode .infos {
     margin-bottom: 90px;
   }
 
+  #casesByStates {
+    width: 920px;
+  }
+
 }
-
-
 
 @media (min-width: 1200px) and (max-width: 1359.98px) {
 
@@ -314,11 +312,180 @@ body.light-mode .infos {
   #footer {
     margin-bottom: 90px;
   }
+
+  #casesByStates {
+    width: 925px;
+  }
   
 }
 
+@media (min-width: 1024px) and (max-width: 1199.98px) {
 
 
+  #recovered_box, #confirmed_box, #deaths_box {
+    margin: 10px 10px !important;
+    text-align: center !important;
+  }
+
+  
+  #casesByCountry .container .justify-content-start {
+    justify-content: center !important;
+  }
+
+  #card_brazil, #card_china, #card_italy, #card_us {
+    margin: 10px !important;
+  }
+
+  #intro_text, #globalCases, #casesByCountry {
+    margin: 0 auto !important;
+  }
+
+  #sideBar {
+    width: 100%;
+    height: 5rem;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0px;
+    box-shadow: 0px 5px 25px #00000010;
+    animation-name: sideBarReponsive;
+  }  
+
+  #sideBar img {
+    margin: 0rem 1rem;
+    color: #67676D;
+    transition: all .3s ease;
+    cursor: pointer;
+  }
+
+  #casesByStates {
+    width: 900px;
+  }
+
+  #globalCases .container .d-flex.justify-content-start {
+    justify-content: center !important;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {
+
+
+  #recovered_box, #confirmed_box, #deaths_box {
+    margin: 10px 10px !important;
+    text-align: center !important;
+  }
+
+  
+  #casesByCountry .container .justify-content-start {
+    justify-content: center !important;
+  }
+
+  #card_brazil, #card_china, #card_italy, #card_us {
+    margin: 10px !important;
+  }
+
+  #intro_text, #globalCases, #casesByCountry {
+    margin: 0 auto !important;
+  }
+
+  #sideBar {
+    width: 100%;
+    height: 5rem;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0px;
+    box-shadow: 0px 5px 25px #00000010;
+    animation-name: sideBarReponsive;
+  }  
+
+  #sideBar img {
+    margin: 0rem 1rem;
+    color: #67676D;
+    transition: all .3s ease;
+    cursor: pointer;
+  }
+
+  #casesByStates {
+    width: 900px;
+  }
+
+  #globalCases .container .d-flex.justify-content-start {
+    justify-content: center !important;
+  }
+
+}
+
+@media (min-width: 788px) and (max-width: 991.98px) {
+
+  #sideBar {
+    width: 100%;
+    height: 5rem;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0px;
+    box-shadow: 0px 5px 25px #00000010;
+    animation-name: sideBarReponsive;
+  }  
+
+  #card_brazil, #card_us, #card_china, #card_italy {
+    max-width: 300px;
+    margin: 10px 5px !important;
+    text-align: center;
+  }
+  
+  #card_brazil::after, #card_us::after, #card_china::after, #card_italy::after {
+    display: none;
+  }
+
+  #sideBar img {
+    margin: 0rem 1rem;
+    color: #67676D;
+    transition: all .3s ease;
+    cursor: pointer;
+  }
+
+  .__react_component_tooltip {
+    display: none;
+  }
+
+  #intro_text {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #globalCases .container .d-flex {
+    justify-content: center !important;
+  }
+
+  #recovered_box, #confirmed_box, #deaths_box {
+    margin: 10px 10px !important;
+    text-align: center !important;
+  }
+
+  #casesByStates {
+    max-width: 300px;
+    font-size: 0.8rem;
+    text-align: center !important;
+  }
+
+  .d-flex.justify-content-start {
+    justify-content: center !important;
+  }
+  
+  #globalCases #casesByCountry {
+    margin-left: 0px !important;
+  }
+
+  body.light-mode #card_brazil::after, body.light-mode #card_china::after, body.light-mode #card_italy::after, body.light-mode #card_us::after {
+    display: none;
+  }
+
+  #footer {
+    margin-bottom: 150px;
+  }
+
+
+}
 
 @media  (min-width:300px) and (max-width: 787px) {
 
@@ -363,7 +530,7 @@ body.light-mode .infos {
   }
 
   #recovered_box, #confirmed_box, #deaths_box {
-    margin: 10px 0px !important;
+    margin: 10px 10px !important;
     text-align: center !important;
   }
 
@@ -390,4 +557,3 @@ body.light-mode .infos {
   }
   
 }
-
