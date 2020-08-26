@@ -81,6 +81,26 @@
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
+#casesByStates::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#casesByStates::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+}
+ 
+/* Handle */
+#casesByStates::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#casesByStates::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 #casesByStates > div {
   border-bottom: 1px solid rgba(255, 255, 255, 0.096);
 }
