@@ -15,10 +15,6 @@
   animation-fill-mode: both;
   box-shadow: $dark-shadow;
   transition: all .3s ease;
-
-  >div {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.096);
-  }
 }
 
 #data {
