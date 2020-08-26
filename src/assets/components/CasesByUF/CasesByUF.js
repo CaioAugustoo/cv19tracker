@@ -24,35 +24,39 @@ class CasesByUF extends React.Component {
       <section 
         id="casesByStates">
         <h1>Casos no Brasil por estados</h1>
-      
       <div 
         id="tableCases">
-        <div
-          id="data" 
-          className="d-flex justify-content-between mb-2 mt-4 pb-2"> 
-          <p>
-            Estado
-          </p>
-          <p>
-            Confirmados
-          </p>
-          <p>
-            Óbitos
-          </p>
-        </div>
-
-        <div className="mb-2"> 
-          {uf.map(uf => (
-            <div className="d-flex justify-content-between  align-items-center infos">
-              <p className="py-1" key={uf.uf.uid}>{uf.uf}</p>
-              <p key={uf.uf.uid}>{uf.cases}</p>
-              <p key={uf.uf.uid}>{uf.deaths}</p>
-            </div>       
-          ))}
-        </div>
-
-      </div>
-        
+          <div
+            id="data" 
+            className="d-flex justify-content-between mb-2 mt-4 pb-2"> 
+            <p>
+             Estado
+            </p>
+            <p>
+              Confirmados
+            </p>
+            <p>
+              Óbitos
+            </p>
+          </div>
+          <div className="mb-2"> 
+            {uf.map(uf => (
+              <div 
+                className="d-flex justify-content-between  align-items-center infos">
+                <p 
+                  className="py-1" 
+                  key={uf.uf.uid}>{uf.uf}
+                 </p>
+                <p 
+                  key={uf.uf.uid}>{uf.cases}
+                </p>
+                <p 
+                  key={uf.uf.uid}>{uf.deaths}
+                </p>
+              </div>       
+            ))}
+          </div>
+        </div> 
       </section>
     );
   };
