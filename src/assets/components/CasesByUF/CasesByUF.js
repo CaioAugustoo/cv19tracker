@@ -42,16 +42,18 @@ class CasesByUF extends React.Component {
           <div className="mb-2"> 
             {uf.map(uf => (
               <div 
-                className="d-flex justify-content-between  align-items-center infos">
+                className="d-flex justify-content-between  align-items-center infos"
+                 key={uf.uid}
+                 >
                 <p 
-                  className="py-1" 
-                  key={uf.uf.uid}>{uf.uf}
-                 </p>
-                <p 
-                  key={uf.uf.uid}>{uf.cases}
+                  className="py-1">
+                  {uf.uf}
                 </p>
                 <p 
-                  key={uf.uf.uid}>{uf.deaths}
+                  {uf.cases}
+                </p>
+                <p>
+                  {uf.deaths}
                 </p>
               </div>       
             ))}
