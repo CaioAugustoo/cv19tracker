@@ -1,40 +1,33 @@
-import React from 'react';
-import './styles/css/styles.css';
+import React, { useEffect, useState } from "react";
+import "./styles/css/styles.css";
 
-export default class FetchData extends React.Component {
-  state = {
-    recovered: null,
-  };
+const FetchData = () => {
+  const [recovered, setRecovered] = useState(null);
 
-  async componentDidMount() {
-    const url = 'https://api.covid19api.com/world/total';
-    const response = await fetch(url);
-    const body = await response.json();
-    this.setState({ recovered: body.TotalRecovered })
-  }
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("https://api.covid19api.com/world/total");
+      const json = await response.json();
+      setRecovered(json.TotalRecovered);
+    };
+    fetchData();
+  }, []);
 
-  render() {
-    return (
-      <section>
-        <div 
-          id="recovered_box" 
-          className="d-flex align-items-center justify-content-center" 
-          style={{'marginRight': '30px'}} 
-          data-tip="Casos totais recuperados"
-          data-place="right"
-          >
-          <div>
-            <h6 
-              style={{fontWeight: '400'}}>
-              Casos recuperados
-              </h6>
+  return (
+    <section>
+      <div
+        id="recovered_box"
+        className="d-flex align-items-center justify-content-center"
+        style={{ marginRight: "30px" }}
+      >
+        <div>
+          <h6 style={{ fontWeight: "400" }}>Casos recuperados</h6>
 
-            <h5 style={{fontWeight: '400'}}>
-              {this.state.recovered}
-            </h5>
-          </div>
+          <h5 style={{ fontWeight: "400" }}>{recovered}</h5>
         </div>
-      </section>
-    );
-  };
-}
+      </div>
+    </section>
+  );
+};
+
+export default FetchData;
