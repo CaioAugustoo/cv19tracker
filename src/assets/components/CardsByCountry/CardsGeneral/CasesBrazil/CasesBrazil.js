@@ -22,7 +22,6 @@ const FetchCasesBrazil = () => {
   }, []);
   return (
     <div id="card_brazil" style={{ marginRight: "30px" }}>
-      {console.log(cases, confirmed, recovered, deaths)}
       <h1>Situação no Brasil</h1>
       <p className="mt-4">
         Casos:
