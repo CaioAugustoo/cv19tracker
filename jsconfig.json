@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "baseUrl": ".",
+    "target": "es3"
+  },
+  "exclude": ["node_modules"]
+}

@@ -1,20 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import useFetch from "src/hooks/useFetch";
+import { GET_UF_TOTAL } from "src/services/api";
+import formatNumbers from "../../../utils/format_numbers";
 import "./styles/css/style.css";
 
 const CasesByUF = () => {
-  const [uf, setUf] = useState(null);
+  const { request, data } = useFetch();
 
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch(
-        "https://covid19-brazil-api.now.sh/api/report/v1"
-      );
-      const json = await response.json();
-      setUf(json.data);
-    };
-    fetchData();
-  }, []);
-  if (uf === null) return null;
+    const { url } = GET_UF_TOTAL();
+    request(url);
+  }, [request]);
+
   return (
     <section id="casesByStates">
       <h1>Casos no Brasil por estados</h1>
@@ -29,16 +26,18 @@ const CasesByUF = () => {
         </div>
 
         <div className="mb-2">
-          {uf.map((uf) => (
-            <div
-              className="d-flex justify-content-between align-items-center infos"
-              key={uf.uid}
-            >
-              <p className="py-1">{uf.uf}</p>
-              <p>{uf.cases}</p>
-              <p>{uf.deaths}</p>
-            </div>
-          ))}
+          {data?.data
+            ?.sort((a, b) => (a.cases < b.cases ? 1 : -1))
+            .map(uf => (
+              <div
+                className="d-flex justify-content-between align-items-center infos"
+                key={uf.uid}
+              >
+                <p className="py-1">{uf.uf}</p>
+                <p>{formatNumbers(uf.cases)}</p>
+                <p>{formatNumbers(uf.deaths)}</p>
+              </div>
+            ))}
         </div>
       </div>
     </section>

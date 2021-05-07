@@ -1,17 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import useFetch from "src/hooks/useFetch";
+import { GET_TOTAL } from "src/services/api";
+import formatNumbers from "../../../../utils/format_numbers";
 import "./styles/css/styles.css";
 
 const FetchData = () => {
-  const [recovered, setRecovered] = useState(null);
+  const { request, data } = useFetch();
 
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch("https://api.covid19api.com/world/total");
-      const json = await response.json();
-      setRecovered(json.TotalRecovered);
-    };
-    fetchData();
-  }, []);
+    const { url } = GET_TOTAL();
+    request(url);
+  }, [request]);
 
   return (
     <section>
@@ -23,7 +22,9 @@ const FetchData = () => {
         <div>
           <h6 style={{ fontWeight: "400" }}>Casos recuperados</h6>
 
-          <h5 style={{ fontWeight: "400" }}>{recovered}</h5>
+          <h5 style={{ fontWeight: "400" }}>
+            {formatNumbers(data?.TotalRecovered)}
+          </h5>
         </div>
       </div>
     </section>
